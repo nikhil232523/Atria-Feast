@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Atria Feasty",
+  "description": "Full-stack Restaurant Management System with order tracking, booking engines, loyalty rewards, real-time analytics, and Java code exporters.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

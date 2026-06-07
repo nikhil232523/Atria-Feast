@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: atria-feasty-rms
+  datasource:
+    url: jdbc:mysql://localhost:3306/atria_feasty_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: Password@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+app:
+  jwt:
+    secret: 53c1e8784d1421683d3e69bb8e27c00e12dcf64fd373679bb8e27c00e12dcf64f
+    expiration-ms: 86400000 # 24 Hours
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.hibernate.SQL: DEBUG
